@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Brute Force | MattCypher</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./mattCypher.js"></script>
+        <script src="./bruteForce.js"></script>
+    </head>
+
+    <body>
+        <div id=container>
+            <div id=navBar>
+                <a id="navbarElement" href="./encryptor.html">Encryption</a>
+                <a id="navbarElement" href="./decryptor.html">Decryption</a>
+                <a id="navbarElement" href="./bruteForce.html">Brute Force attack</a>
+            </div>
+
+            <div id="fieldsetContainer">
+                <fieldset>
+                    <legend>Brute force attack</legend>
+                    <label for="userInput" style="display: block;"><p>Testo da decrittare: </p></label>
+                    <textarea id="userInput" placeholder="Inserisci qui il testo"></textarea>
+                    <p style="margin-bottom: 0%; margin-top: 2%;">Intervallo chiave: </p>
+                    <p id="keyAlert">I campi lasciati vuoti assumeranno il valore predefinito (min=0; max=100)</p>
+                    <input type="number" min="0" class="key" id="minKey" placeholder="Min">
+                    <input type="number" min="0" class="key" id="maxKey" placeholder="Max">
+
+                    <button onclick="bruteForce()">Attack!</button>
+                    <hr>
+                    <label for="output" style="display: block;"><p>Risultato (Chiave ==> Output): </p></label>
+                    <textarea id="output" readonly></textarea>
+                    <!-- The button used to copy the text -->
+                    <button onclick="copyToClipboard()">Copia l'output negli appunti</button>
+                </fieldset>  
+            </div>
+        </div>
+    </body>
+</html>

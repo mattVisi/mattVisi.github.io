@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Encryptor | MattCypher</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./mattCypher.js"></script>
+    </head>
+
+    <body>
+        <div id=container>
+            <div id=navBar>
+                <a id="navbarElement" href="./encryptor.html">Encryption</a>
+                <a id="navbarElement" href="./decryptor.html">Decryption</a>
+                <a id="navbarElement" href="./bruteForce.html">Brute Force attack</a>
+            </div>
+
+            <div id="fieldsetContainer">
+                <fieldset>
+                    <legend>Encryption</legend>
+                    <label for="userInput" style="display: block;"><p>Testo da crittare: </p></label>
+                    <textarea id="userInput" placeholder="Inserisci qui il testo"></textarea>
+                    <label for="key"><p>Chiave: </p></label>
+                    <input type="number" min="0" class="key" id="key" placeholder="Chiave di cifratura">
+                    <button onclick="encryptor()">Encrypt!</button>
+                    <hr>
+                    <label for="output" style="display: block;"><p>Testo crittato: </p></label>
+                    <textarea id="output" readonly></textarea>
+                    <!-- The button used to copy the text -->
+                    <button onclick="copyToClipboard()">Copia l'output negli appunti</button>
+                </fieldset>  
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    background-color: DarkSlateGray;
+    text-decoration-color: aliceblue;
+}
+
+h1 {color: aliceblue;}
+h2 {color: aliceblue;}
+p {color: aliceblue;}
+a:link {text-decoration: none;}
+a:default {text-decoration: none;}
+a:visited {text-decoration: none;}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#content {
+    border-style: solid;
+    border-color: gray;
+    border-radius: 2%;
+    margin-left: 20% ;
+    margin-right: 20% ;
+    padding: 1%;
+}
